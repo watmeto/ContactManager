@@ -66,7 +66,7 @@
   <action name="actionAjouter">
    <property name="icon">
     <iconset>
-     <normaloff>../addressbook_add_98423.jpg</normaloff>../addressbook_add_98423.jpg</iconset>
+     <normaloff>../img/addressbook_add_98423.jpg</normaloff>../img/addressbook_add_98423.jpg</iconset>
    </property>
    <property name="text">
     <string>Ajouter</string>
@@ -75,7 +75,7 @@
   <action name="actionLicence">
    <property name="icon">
     <iconset>
-     <normaloff>../icon-39737_640.png</normaloff>../icon-39737_640.png</iconset>
+     <normaloff>../img/icon-39737_640.png</normaloff>../img/icon-39737_640.png</iconset>
    </property>
    <property name="text">
     <string>Licence</string>
@@ -84,7 +84,7 @@
   <action name="actionAide">
    <property name="icon">
     <iconset>
-     <normaloff>../help_globe_93.jpg</normaloff>../help_globe_93.jpg</iconset>
+     <normaloff>../img/help_globe_93.jpg</normaloff>../img/help_globe_93.jpg</iconset>
    </property>
    <property name="text">
     <string>Aide ?</string>
@@ -96,8 +96,7 @@
    </property>
    <property name="icon">
     <iconset>
-     <normalon>../10552-AlexTheKid-EteindreOrdinateur (1).png</normalon>
-    </iconset>
+     <normaloff>../img/10552-AlexTheKid-EteindreOrdinateur (1).png</normaloff>../img/10552-AlexTheKid-EteindreOrdinateur (1).png</iconset>
    </property>
    <property name="text">
     <string>Fermer</string>
@@ -106,7 +105,7 @@
   <action name="actionRechercher">
    <property name="icon">
     <iconset>
-     <normaloff>../magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg</normaloff>../magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg</iconset>
+     <normaloff>../img/magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg</normaloff>../img/magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg</iconset>
    </property>
    <property name="text">
     <string>Rechercher</string>
@@ -115,10 +114,13 @@
   <action name="actionListe">
    <property name="icon">
     <iconset>
-     <normaloff>../LISTE.png</normaloff>../LISTE.png</iconset>
+     <normaloff>../img/LISTE.png</normaloff>../img/LISTE.png</iconset>
    </property>
    <property name="text">
     <string>Liste</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
    </property>
   </action>
  </widget>

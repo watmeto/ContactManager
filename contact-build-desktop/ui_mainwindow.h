@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu 4. Apr 18:37:15 2013
+** Created: Thu 4. Apr 19:40:51 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -50,34 +50,35 @@ public:
         actionAjouter = new QAction(MainWindow);
         actionAjouter->setObjectName(QString::fromUtf8("actionAjouter"));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../addressbook_add_98423.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("../img/addressbook_add_98423.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         actionAjouter->setIcon(icon);
         actionLicence = new QAction(MainWindow);
         actionLicence->setObjectName(QString::fromUtf8("actionLicence"));
         QIcon icon1;
-        icon1.addFile(QString::fromUtf8("../icon-39737_640.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon1.addFile(QString::fromUtf8("../img/icon-39737_640.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionLicence->setIcon(icon1);
         actionAide = new QAction(MainWindow);
         actionAide->setObjectName(QString::fromUtf8("actionAide"));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8("../help_globe_93.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8("../img/help_globe_93.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         actionAide->setIcon(icon2);
         actionFermer = new QAction(MainWindow);
         actionFermer->setObjectName(QString::fromUtf8("actionFermer"));
         actionFermer->setCheckable(true);
         QIcon icon3;
-        icon3.addFile(QString::fromUtf8("../10552-AlexTheKid-EteindreOrdinateur (1).png"), QSize(), QIcon::Normal, QIcon::On);
+        icon3.addFile(QString::fromUtf8("../img/10552-AlexTheKid-EteindreOrdinateur (1).png"), QSize(), QIcon::Normal, QIcon::Off);
         actionFermer->setIcon(icon3);
         actionRechercher = new QAction(MainWindow);
         actionRechercher->setObjectName(QString::fromUtf8("actionRechercher"));
         QIcon icon4;
-        icon4.addFile(QString::fromUtf8("../magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        icon4.addFile(QString::fromUtf8("../img/magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg"), QSize(), QIcon::Normal, QIcon::Off);
         actionRechercher->setIcon(icon4);
         actionListe = new QAction(MainWindow);
         actionListe->setObjectName(QString::fromUtf8("actionListe"));
         QIcon icon5;
-        icon5.addFile(QString::fromUtf8("../LISTE.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon5.addFile(QString::fromUtf8("../img/LISTE.png"), QSize(), QIcon::Normal, QIcon::Off);
         actionListe->setIcon(icon5);
+        actionListe->setIconVisibleInMenu(true);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         MainWindow->setCentralWidget(centralWidget);
