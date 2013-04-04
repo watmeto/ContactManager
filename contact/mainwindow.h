@@ -16,6 +16,9 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_actionFermer_activated();
+
+    void on_actionLicence_triggered();
 
 private:
     Ui::MainWindow *ui;

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>530</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionFermer"/>
+   </widget>
+   <widget class="QMenu" name="menuEditer">
+    <property name="title">
+     <string>Editer</string>
+    </property>
+    <addaction name="actionAjouter"/>
+    <addaction name="actionRechercher"/>
+   </widget>
+   <widget class="QMenu" name="menuListe_contact">
+    <property name="title">
+     <string>Liste contact</string>
+    </property>
+    <addaction name="actionListe"/>
+   </widget>
+   <widget class="QMenu" name="menuA_propos">
+    <property name="title">
+     <string>A propos</string>
+    </property>
+    <addaction name="actionLicence"/>
+    <addaction name="actionAide"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEditer"/>
+   <addaction name="menuListe_contact"/>
+   <addaction name="menuA_propos"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionAjouter">
+   <property name="icon">
+    <iconset>
+     <normaloff>../addressbook_add_98423.jpg</normaloff>../addressbook_add_98423.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </action>
+  <action name="actionLicence">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icon-39737_640.png</normaloff>../icon-39737_640.png</iconset>
+   </property>
+   <property name="text">
+    <string>Licence</string>
+   </property>
+  </action>
+  <action name="actionAide">
+   <property name="icon">
+    <iconset>
+     <normaloff>../help_globe_93.jpg</normaloff>../help_globe_93.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Aide ?</string>
+   </property>
+  </action>
+  <action name="actionFermer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>../10552-AlexTheKid-EteindreOrdinateur (1).png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Fermer</string>
+   </property>
+  </action>
+  <action name="actionRechercher">
+   <property name="icon">
+    <iconset>
+     <normaloff>../magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg</normaloff>../magnifying-glass-icon-on-square-internet-button-pixmac-icon-45833385.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Rechercher</string>
+   </property>
+  </action>
+  <action name="actionListe">
+   <property name="icon">
+    <iconset>
+     <normaloff>../LISTE.png</normaloff>../LISTE.png</iconset>
+   </property>
+   <property name="text">
+    <string>Liste</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
