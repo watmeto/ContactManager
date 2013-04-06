@@ -20,6 +20,8 @@ private slots:
 
     void on_actionLicence_triggered();
 
+    void on_actionRechercher_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
