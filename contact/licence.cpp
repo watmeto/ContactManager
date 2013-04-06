@@ -12,3 +12,4 @@ licence::~licence()
 {
     delete ui;
 }
+/*test*/
