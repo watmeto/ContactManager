@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'licence.ui'
 **
-** Created: Thu 4. Apr 19:25:13 2013
+** Created: Sat 6. Apr 03:39:11 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -35,6 +35,7 @@ public:
         textBrowser = new QTextBrowser(licence);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(0, 0, 361, 201));
+        textBrowser->setOpenExternalLinks(true);
         pushButton = new QPushButton(licence);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(140, 150, 75, 23));

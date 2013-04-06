@@ -1,4 +1,6 @@
 #include <QtGui/QApplication>
+#include <QDesktopServices>
+#include <QUrl>
 #include "mainwindow.h"
 
 int main(int argc, char *argv[])
