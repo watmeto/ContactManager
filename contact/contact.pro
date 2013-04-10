@@ -12,10 +12,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    licence.cpp
+    licence.cpp \
+    etudiant.cpp
 
 HEADERS  += mainwindow.h \
-    licence.h
+    licence.h \
+    etudiant.h
 
 FORMS    += mainwindow.ui \
     licence.ui
