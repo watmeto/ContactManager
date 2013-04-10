@@ -18,7 +18,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QWidget" name="layoutWidget">
@@ -309,8 +309,8 @@ border-color: rgb(85, 85, 127);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>539</width>
-           <height>199</height>
+           <width>537</width>
+           <height>197</height>
           </rect>
          </property>
          <widget class="Line" name="line">
@@ -548,7 +548,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>593</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
