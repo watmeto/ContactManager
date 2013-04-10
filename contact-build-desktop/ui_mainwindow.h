@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed 10. Apr 23:26:51 2013
+** Created: Wed 10. Apr 23:32:11 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -217,7 +217,7 @@ public:
         page_4->setObjectName(QString::fromUtf8("page_4"));
         pushButton_5 = new QPushButton(page_4);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(30, 80, 75, 61));
+        pushButton_5->setGeometry(QRect(30, 100, 75, 31));
         pushButton_5->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
         stackedWidget_2->addWidget(page_4);
         page_5 = new QWidget();
@@ -282,11 +282,11 @@ public:
 
         pushButton_3 = new QPushButton(page_2);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(180, 190, 75, 61));
+        pushButton_3->setGeometry(QRect(180, 210, 75, 31));
         pushButton_3->setStyleSheet(QString::fromUtf8("color: rgb(0, 170, 0);"));
         pushButton_4 = new QPushButton(page_2);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(280, 190, 75, 61));
+        pushButton_4->setGeometry(QRect(280, 210, 75, 31));
         pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         stackedWidget->addWidget(page_2);
         page_3 = new QWidget();
@@ -409,7 +409,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
         stackedWidget_2->setCurrentIndex(0);
 
 

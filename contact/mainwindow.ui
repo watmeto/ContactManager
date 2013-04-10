@@ -18,7 +18,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QWidget" name="layoutWidget">
@@ -141,9 +141,9 @@ color: rgb(0, 170, 0);</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>80</y>
+            <y>100</y>
             <width>75</width>
-            <height>61</height>
+            <height>31</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -257,9 +257,9 @@ p, li { white-space: pre-wrap; }
         <property name="geometry">
          <rect>
           <x>180</x>
-          <y>190</y>
+          <y>210</y>
           <width>75</width>
-          <height>61</height>
+          <height>31</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -273,9 +273,9 @@ p, li { white-space: pre-wrap; }
         <property name="geometry">
          <rect>
           <x>280</x>
-          <y>190</y>
+          <y>210</y>
           <width>75</width>
-          <height>61</height>
+          <height>31</height>
          </rect>
         </property>
         <property name="styleSheet">

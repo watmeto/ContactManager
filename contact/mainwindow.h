@@ -22,6 +22,10 @@ private slots:
 
     void on_actionRechercher_triggered();
 
+    void on_actionAjouter_activated();
+
+    void on_actionListe_activated();
+
 private:
     Ui::MainWindow *ui;
 };
