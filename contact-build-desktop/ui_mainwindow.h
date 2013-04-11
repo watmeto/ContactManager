@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu 11. Apr 23:10:35 2013
+** Created: Thu 11. Apr 23:30:04 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -57,7 +57,7 @@ public:
     QLineEdit *Eemail;
     QLineEdit *Eprenom;
     QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *Reset;
     QWidget *page_2;
     QStackedWidget *stackedWidget_2;
     QWidget *page_4;
@@ -203,10 +203,10 @@ public:
         pushButton->setGeometry(QRect(160, 180, 75, 23));
         pushButton->setStyleSheet(QString::fromUtf8("\n"
 "color: rgb(0, 170, 0);"));
-        pushButton_2 = new QPushButton(page);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(300, 180, 75, 23));
-        pushButton_2->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
+        Reset = new QPushButton(page);
+        Reset->setObjectName(QString::fromUtf8("Reset"));
+        Reset->setGeometry(QRect(300, 180, 75, 23));
+        Reset->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QString::fromUtf8("page_2"));
@@ -446,7 +446,7 @@ public:
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600; font-style:italic;color:#39F;\">Adresse mail</span></p></body></html>", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("MainWindow", "Enr\303\251gistrer", 0, QApplication::UnicodeUTF8));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
+        Reset->setText(QApplication::translate("MainWindow", "Reset", 0, QApplication::UnicodeUTF8));
         pushButton_5->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
         plainTextEdit_3->setPlainText(QApplication::translate("MainWindow", "ici ce sera la page modif", 0, QApplication::UnicodeUTF8));
         plainTextEdit_4->setPlainText(QApplication::translate("MainWindow", "Liste", 0, QApplication::UnicodeUTF8));

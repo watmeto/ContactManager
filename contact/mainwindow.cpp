@@ -58,3 +58,12 @@ void MainWindow::on_pushButton_clicked()
     enregistrer(e);
 }
 
+
+
+void MainWindow::on_Reset_clicked()
+{
+    ui->Enom->setText("");
+    ui->Eprenom->setText("");
+    ui->Eemail->setText("");
+    ui->Enum->setText("");
+}
