@@ -8,13 +8,33 @@
 #include <QFile>
 #include <QTextStream>
 
+int nbEtudiant(){
+        QString fileName = "eleves.txt";
+        QFile fichier(fileName);
+        int nb = 0;
+        if(fichier.open(QIODevice::ReadOnly | QIODevice::Text)){
+                QTextStream flux(&fichier);
+
+
+                while (!flux.atEnd())
+                {
+                        flux.readLine();
+                        nb++;
+
+                }
+
+        }
+        qDebug() << nb;
+        return(nb+1);
+
+}
 void enregistrer(Etudiant e){
     QString fileName = "eleves.txt";
     QFile fichier(fileName);
     fichier.open(QIODevice::WriteOnly | QIODevice::Append| QIODevice::Text);
     QTextStream flux(&fichier);
     qDebug() << e.who();
-    qDebug() << "lol";
+   // qDebug() << "lol";
     flux << e.who();
     fichier.flush();
     fichier.close();
@@ -139,7 +159,11 @@ Etudiant::Etudiant(QString ma, QString no, QString p, QString a, QString na)
         matricule = ma;
         nom = no, prenom = p, numero = a, email = na;
 }
-
+Etudiant::Etudiant(QString no, QString p, QString a, QString na)
+{
+        matricule = QString::number(nbEtudiant());
+        nom = no, prenom = p, numero = a, email = na;
+}
 Etudiant::Etudiant()
 {
         matricule = "";

@@ -18,7 +18,7 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QWidget" name="layoutWidget">
@@ -43,7 +43,7 @@ p, li { white-space: pre-wrap; }
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit"/>
+          <widget class="QLineEdit" name="Enom"/>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_2">
@@ -55,9 +55,6 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; font-style:italic;color:#39F;&quot;&gt;Prénom(s)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit_2"/>
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="label_3">
@@ -71,7 +68,7 @@ p, li { white-space: pre-wrap; }
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QLineEdit" name="lineEdit_3"/>
+          <widget class="QLineEdit" name="Enum"/>
          </item>
          <item row="3" column="0">
           <widget class="QLabel" name="label_4">
@@ -85,7 +82,10 @@ p, li { white-space: pre-wrap; }
           </widget>
          </item>
          <item row="3" column="1">
-          <widget class="QLineEdit" name="lineEdit_4"/>
+          <widget class="QLineEdit" name="Eemail"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Eprenom"/>
          </item>
         </layout>
        </widget>
@@ -309,8 +309,8 @@ border-color: rgb(85, 85, 127);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>539</width>
-           <height>199</height>
+           <width>537</width>
+           <height>197</height>
           </rect>
          </property>
          <widget class="Line" name="line">
@@ -548,7 +548,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>593</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">

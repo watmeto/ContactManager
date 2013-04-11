@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu 11. Apr 15:47:09 2013
+** Created: Thu 11. Apr 23:10:35 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -49,13 +49,13 @@ public:
     QWidget *layoutWidget;
     QFormLayout *formLayout_2;
     QLabel *label;
-    QLineEdit *lineEdit;
+    QLineEdit *Enom;
     QLabel *label_2;
-    QLineEdit *lineEdit_2;
     QLabel *label_3;
-    QLineEdit *lineEdit_3;
+    QLineEdit *Enum;
     QLabel *label_4;
-    QLineEdit *lineEdit_4;
+    QLineEdit *Eemail;
+    QLineEdit *Eprenom;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QWidget *page_2;
@@ -163,40 +163,40 @@ public:
 
         formLayout_2->setWidget(0, QFormLayout::LabelRole, label);
 
-        lineEdit = new QLineEdit(layoutWidget);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        Enom = new QLineEdit(layoutWidget);
+        Enom->setObjectName(QString::fromUtf8("Enom"));
 
-        formLayout_2->setWidget(0, QFormLayout::FieldRole, lineEdit);
+        formLayout_2->setWidget(0, QFormLayout::FieldRole, Enom);
 
         label_2 = new QLabel(layoutWidget);
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         formLayout_2->setWidget(1, QFormLayout::LabelRole, label_2);
 
-        lineEdit_2 = new QLineEdit(layoutWidget);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-
-        formLayout_2->setWidget(1, QFormLayout::FieldRole, lineEdit_2);
-
         label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
 
         formLayout_2->setWidget(2, QFormLayout::LabelRole, label_3);
 
-        lineEdit_3 = new QLineEdit(layoutWidget);
-        lineEdit_3->setObjectName(QString::fromUtf8("lineEdit_3"));
+        Enum = new QLineEdit(layoutWidget);
+        Enum->setObjectName(QString::fromUtf8("Enum"));
 
-        formLayout_2->setWidget(2, QFormLayout::FieldRole, lineEdit_3);
+        formLayout_2->setWidget(2, QFormLayout::FieldRole, Enum);
 
         label_4 = new QLabel(layoutWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
 
         formLayout_2->setWidget(3, QFormLayout::LabelRole, label_4);
 
-        lineEdit_4 = new QLineEdit(layoutWidget);
-        lineEdit_4->setObjectName(QString::fromUtf8("lineEdit_4"));
+        Eemail = new QLineEdit(layoutWidget);
+        Eemail->setObjectName(QString::fromUtf8("Eemail"));
 
-        formLayout_2->setWidget(3, QFormLayout::FieldRole, lineEdit_4);
+        formLayout_2->setWidget(3, QFormLayout::FieldRole, Eemail);
+
+        Eprenom = new QLineEdit(layoutWidget);
+        Eprenom->setObjectName(QString::fromUtf8("Eprenom"));
+
+        formLayout_2->setWidget(1, QFormLayout::FieldRole, Eprenom);
 
         pushButton = new QPushButton(page);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -300,7 +300,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 539, 199));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 537, 197));
         line = new QFrame(scrollAreaWidgetContents);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(120, 0, 16, 201));
@@ -379,7 +379,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 593, 21));
+        menuBar->setGeometry(QRect(0, 0, 593, 20));
         menuFichier = new QMenu(menuBar);
         menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
         menuEditer = new QMenu(menuBar);
@@ -409,7 +409,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
         stackedWidget_2->setCurrentIndex(0);
 
 

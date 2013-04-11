@@ -11,6 +11,7 @@ private:
         QString matricule;
 public:
         Etudiant(QString matricule, QString nom, QString prenom, QString numero, QString email);
+        Etudiant(QString nom, QString prenom, QString numero, QString email);
         Etudiant (QString ligne);
         Etudiant();
         QString who();
@@ -18,7 +19,7 @@ public:
         QString getMat();
         QString getNa();
 };
-
+int nbEtudiant();
 void enregistrer(Etudiant e);
 void ajouter();
 void listeEtudiants();

@@ -6,10 +6,11 @@
 
 int main(int argc, char *argv[])
 {
-    Etudiant e("aarar/ararazer/raraerae/arazeraz/arazraz");
+    /*Etudiant e("aarar/ararazer/raraerae/arazeraz/arazraz");
         e.affiche();
         enregistrer(e);
         ajouter();
+        nbEtudiant(); */
     QApplication a(argc, argv);
     MainWindow w;
     w.show();

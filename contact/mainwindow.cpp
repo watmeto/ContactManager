@@ -3,6 +3,7 @@
 #include "licence.h"
 #include <qinputdialog.h>
 #include <QDebug>
+#include "etudiant.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -43,5 +44,17 @@ void MainWindow::on_actionAjouter_activated()
 void MainWindow::on_actionListe_activated()
 {
     ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_pushButton_clicked()
+{
+    QString nom, prenom, email, num;
+    nom = ui->Enom->text();
+    prenom = ui->Eprenom->text();
+    email = ui->Eemail->text();
+    num =  ui->Enum->text();
+    Etudiant e(nom, prenom, num, email);
+    enregistrer(e);
 }
 

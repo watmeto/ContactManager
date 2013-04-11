@@ -26,6 +26,10 @@ private slots:
 
     void on_actionListe_activated();
 
+    void on_pushButton_clicked();
+
+    void on_Enregistrer_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
