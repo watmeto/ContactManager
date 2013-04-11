@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed 10. Apr 23:32:11 2013
+** Created: Thu 11. Apr 15:47:09 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -294,13 +294,13 @@ public:
         scrollArea = new QScrollArea(page_3);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
         scrollArea->setGeometry(QRect(10, 70, 541, 201));
-        scrollArea->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 255);\n"
+        scrollArea->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "color: rgb(170, 165, 157);\n"
 "border-color: rgb(85, 85, 127);"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 537, 197));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 539, 199));
         line = new QFrame(scrollAreaWidgetContents);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(120, 0, 16, 201));
@@ -379,7 +379,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 593, 20));
+        menuBar->setGeometry(QRect(0, 0, 593, 21));
         menuFichier = new QMenu(menuBar);
         menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
         menuEditer = new QMenu(menuBar);

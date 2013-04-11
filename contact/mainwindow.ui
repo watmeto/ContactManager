@@ -297,7 +297,7 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(85, 170, 255);
+         <string notr="true">background-color: rgb(255, 255, 255);
 color: rgb(170, 165, 157);
 border-color: rgb(85, 85, 127);</string>
         </property>
@@ -309,8 +309,8 @@ border-color: rgb(85, 85, 127);</string>
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>537</width>
-           <height>197</height>
+           <width>539</width>
+           <height>199</height>
           </rect>
          </property>
          <widget class="Line" name="line">
@@ -548,7 +548,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>593</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'licence.ui'
 **
-** Created: Wed 10. Apr 23:25:53 2013
+** Created: Thu 11. Apr 15:27:37 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
