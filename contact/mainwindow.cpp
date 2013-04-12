@@ -34,8 +34,21 @@ void MainWindow::on_actionLicence_triggered()
 void MainWindow::on_actionRechercher_triggered()
 {
     QString matricule= QInputDialog::getText(this, "Matricule", "Saisissez le matricule à rechercher");
-    qDebug() << matricule;
+       qDebug() << matricule;
+
+   /* if(this->event(QEvent *matricule))
+        {
+             ui->stackedWidget->setCurrentIndex(1);
+        }
+   */
+
+    if(matricule.end())
+    {
+        ui->stackedWidget->setCurrentIndex(1);
+    }
+
 }
+
 
 void MainWindow::on_actionAjouter_activated()
 {

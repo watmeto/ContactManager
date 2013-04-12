@@ -28,7 +28,7 @@ private slots:
 
     void on_pushButton_clicked();
 
-    void on_Enregistrer_clicked();
+    //void on_Enregistrer_clicked();
 
     void on_Reset_clicked();
 

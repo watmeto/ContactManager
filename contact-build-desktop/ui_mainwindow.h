@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri 12. Apr 00:59:00 2013
+** Created: Fri 12. Apr 16:56:19 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -15,7 +15,6 @@
 #include <QtGui/QApplication>
 #include <QtGui/QButtonGroup>
 #include <QtGui/QFormLayout>
-#include <QtGui/QFrame>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QLineEdit>
@@ -24,9 +23,9 @@
 #include <QtGui/QMenuBar>
 #include <QtGui/QPlainTextEdit>
 #include <QtGui/QPushButton>
-#include <QtGui/QScrollArea>
 #include <QtGui/QStackedWidget>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTableWidget>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -69,32 +68,19 @@ public:
     QWidget *layoutWidget_2;
     QFormLayout *formLayout_3;
     QLabel *label_5;
+    QLineEdit *lineEdit_5;
     QLabel *label_6;
     QLineEdit *lineEdit_6;
     QLabel *label_7;
     QLineEdit *lineEdit_7;
-    QLabel *label_8;
     QLineEdit *lineEdit_8;
-    QLineEdit *lineEdit_5;
+    QLineEdit *lineEdit_9;
+    QLabel *label_8;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QWidget *page_3;
-    QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
-    QFrame *line;
-    QFrame *line_2;
-    QFrame *line_3;
     QLabel *label_9;
-    QFrame *line_4;
-    QFrame *line_5;
-    QFrame *line_6;
-    QFrame *line_7;
-    QFrame *line_8;
-    QFrame *line_9;
-    QLabel *label_10;
-    QLabel *label_11;
-    QLabel *label_12;
-    QLabel *label_13;
+    QTableWidget *tableWidget;
     QMenuBar *menuBar;
     QMenu *menuFichier;
     QMenu *menuEditer;
@@ -107,7 +93,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(593, 365);
+        MainWindow->resize(610, 359);
         actionAjouter = new QAction(MainWindow);
         actionAjouter->setObjectName(QString::fromUtf8("actionAjouter"));
         QIcon icon;
@@ -125,7 +111,6 @@ public:
         actionAide->setIcon(icon2);
         actionFermer = new QAction(MainWindow);
         actionFermer->setObjectName(QString::fromUtf8("actionFermer"));
-        actionFermer->setCheckable(true);
         QIcon icon3;
         icon3.addFile(QString::fromUtf8("../img/10552-AlexTheKid-EteindreOrdinateur (1).png"), QSize(), QIcon::Normal, QIcon::Off);
         actionFermer->setIcon(icon3);
@@ -152,7 +137,7 @@ public:
         page->setObjectName(QString::fromUtf8("page"));
         layoutWidget = new QWidget(page);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 50, 269, 112));
+        layoutWidget->setGeometry(QRect(20, 50, 491, 112));
         formLayout_2 = new QFormLayout(layoutWidget);
         formLayout_2->setSpacing(6);
         formLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -235,16 +220,22 @@ public:
         stackedWidget_2->addWidget(page_6);
         layoutWidget_2 = new QWidget(page_2);
         layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
-        layoutWidget_2->setGeometry(QRect(10, 30, 481, 141));
+        layoutWidget_2->setGeometry(QRect(10, 30, 481, 144));
         formLayout_3 = new QFormLayout(layoutWidget_2);
         formLayout_3->setSpacing(6);
         formLayout_3->setContentsMargins(11, 11, 11, 11);
         formLayout_3->setObjectName(QString::fromUtf8("formLayout_3"));
+        formLayout_3->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
         formLayout_3->setContentsMargins(0, 0, 0, 0);
         label_5 = new QLabel(layoutWidget_2);
         label_5->setObjectName(QString::fromUtf8("label_5"));
 
         formLayout_3->setWidget(0, QFormLayout::LabelRole, label_5);
+
+        lineEdit_5 = new QLineEdit(layoutWidget_2);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+
+        formLayout_3->setWidget(0, QFormLayout::FieldRole, lineEdit_5);
 
         label_6 = new QLabel(layoutWidget_2);
         label_6->setObjectName(QString::fromUtf8("label_6"));
@@ -266,22 +257,21 @@ public:
 
         formLayout_3->setWidget(2, QFormLayout::FieldRole, lineEdit_7);
 
+        lineEdit_8 = new QLineEdit(layoutWidget_2);
+        lineEdit_8->setObjectName(QString::fromUtf8("lineEdit_8"));
+        lineEdit_8->setEnabled(false);
+
+        formLayout_3->setWidget(4, QFormLayout::FieldRole, lineEdit_8);
+
+        lineEdit_9 = new QLineEdit(layoutWidget_2);
+        lineEdit_9->setObjectName(QString::fromUtf8("lineEdit_9"));
+
+        formLayout_3->setWidget(3, QFormLayout::FieldRole, lineEdit_9);
+
         label_8 = new QLabel(layoutWidget_2);
         label_8->setObjectName(QString::fromUtf8("label_8"));
 
         formLayout_3->setWidget(3, QFormLayout::LabelRole, label_8);
-
-        lineEdit_8 = new QLineEdit(layoutWidget_2);
-        lineEdit_8->setObjectName(QString::fromUtf8("lineEdit_8"));
-
-        formLayout_3->setWidget(3, QFormLayout::FieldRole, lineEdit_8);
-
-        lineEdit_5 = new QLineEdit(layoutWidget_2);
-        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
-        lineEdit_5->setEnabled(false);
-        lineEdit_5->setStyleSheet(QString::fromUtf8("border-color: rgb(213, 213, 213);"));
-
-        formLayout_3->setWidget(0, QFormLayout::FieldRole, lineEdit_5);
 
         pushButton_3 = new QPushButton(page_2);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
@@ -292,94 +282,49 @@ public:
         pushButton_4->setGeometry(QRect(280, 210, 75, 31));
         pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         stackedWidget->addWidget(page_2);
-        stackedWidget_2->raise();
-        layoutWidget_2->raise();
-        pushButton_3->raise();
-        pushButton_4->raise();
-        lineEdit_5->raise();
         page_3 = new QWidget();
         page_3->setObjectName(QString::fromUtf8("page_3"));
-        scrollArea = new QScrollArea(page_3);
-        scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(10, 70, 541, 201));
-        scrollArea->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
-"color: rgb(170, 165, 157);\n"
-"border-color: rgb(85, 85, 127);"));
-        scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 539, 199));
-        line = new QFrame(scrollAreaWidgetContents);
-        line->setObjectName(QString::fromUtf8("line"));
-        line->setGeometry(QRect(120, 0, 16, 201));
-        line->setFrameShape(QFrame::VLine);
-        line->setFrameShadow(QFrame::Sunken);
-        line_2 = new QFrame(scrollAreaWidgetContents);
-        line_2->setObjectName(QString::fromUtf8("line_2"));
-        line_2->setGeometry(QRect(250, 0, 20, 201));
-        line_2->setFrameShape(QFrame::VLine);
-        line_2->setFrameShadow(QFrame::Sunken);
-        line_3 = new QFrame(scrollAreaWidgetContents);
-        line_3->setObjectName(QString::fromUtf8("line_3"));
-        line_3->setGeometry(QRect(380, 0, 20, 201));
-        line_3->setFrameShape(QFrame::VLine);
-        line_3->setFrameShadow(QFrame::Sunken);
-        scrollArea->setWidget(scrollAreaWidgetContents);
         label_9 = new QLabel(page_3);
         label_9->setObjectName(QString::fromUtf8("label_9"));
         label_9->setGeometry(QRect(200, 0, 161, 31));
         label_9->setStyleSheet(QString::fromUtf8("color: rgb(177, 177, 177);\n"
 "background-color: rgb(219, 255, 255);"));
-        line_4 = new QFrame(page_3);
-        line_4->setObjectName(QString::fromUtf8("line_4"));
-        line_4->setGeometry(QRect(10, 30, 541, 16));
-        line_4->setFrameShape(QFrame::HLine);
-        line_4->setFrameShadow(QFrame::Sunken);
-        line_5 = new QFrame(page_3);
-        line_5->setObjectName(QString::fromUtf8("line_5"));
-        line_5->setGeometry(QRect(130, 40, 20, 31));
-        line_5->setFrameShape(QFrame::VLine);
-        line_5->setFrameShadow(QFrame::Sunken);
-        line_6 = new QFrame(page_3);
-        line_6->setObjectName(QString::fromUtf8("line_6"));
-        line_6->setGeometry(QRect(260, 40, 20, 31));
-        line_6->setFrameShape(QFrame::VLine);
-        line_6->setFrameShadow(QFrame::Sunken);
-        line_7 = new QFrame(page_3);
-        line_7->setObjectName(QString::fromUtf8("line_7"));
-        line_7->setGeometry(QRect(390, 40, 20, 31));
-        line_7->setFrameShape(QFrame::VLine);
-        line_7->setFrameShadow(QFrame::Sunken);
-        line_8 = new QFrame(page_3);
-        line_8->setObjectName(QString::fromUtf8("line_8"));
-        line_8->setGeometry(QRect(540, 40, 20, 31));
-        line_8->setFrameShape(QFrame::VLine);
-        line_8->setFrameShadow(QFrame::Sunken);
-        line_9 = new QFrame(page_3);
-        line_9->setObjectName(QString::fromUtf8("line_9"));
-        line_9->setGeometry(QRect(0, 40, 20, 31));
-        line_9->setFrameShape(QFrame::VLine);
-        line_9->setFrameShadow(QFrame::Sunken);
-        label_10 = new QLabel(page_3);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
-        label_10->setGeometry(QRect(10, 40, 131, 31));
-        label_10->setStyleSheet(QString::fromUtf8("color: rgb(177, 177, 177);\n"
-""));
-        label_11 = new QLabel(page_3);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(140, 40, 131, 31));
-        label_11->setStyleSheet(QString::fromUtf8("color: rgb(177, 177, 177);\n"
-""));
-        label_12 = new QLabel(page_3);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(270, 40, 131, 31));
-        label_12->setStyleSheet(QString::fromUtf8("color: rgb(177, 177, 177);\n"
-""));
-        label_13 = new QLabel(page_3);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
-        label_13->setGeometry(QRect(400, 40, 131, 31));
-        label_13->setStyleSheet(QString::fromUtf8("color: rgb(177, 177, 177);\n"
-""));
+        tableWidget = new QTableWidget(page_3);
+        if (tableWidget->columnCount() < 4)
+            tableWidget->setColumnCount(4);
+        QTableWidgetItem *__qtablewidgetitem = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(0, __qtablewidgetitem);
+        QTableWidgetItem *__qtablewidgetitem1 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(1, __qtablewidgetitem1);
+        QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem2);
+        QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
+        tableWidget->setHorizontalHeaderItem(3, __qtablewidgetitem3);
+        if (tableWidget->rowCount() < 2)
+            tableWidget->setRowCount(2);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(0, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        tableWidget->setVerticalHeaderItem(1, __qtablewidgetitem5);
+        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
+        tableWidget->setItem(0, 0, __qtablewidgetitem6);
+        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
+        tableWidget->setItem(0, 1, __qtablewidgetitem7);
+        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
+        tableWidget->setItem(0, 2, __qtablewidgetitem8);
+        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
+        __qtablewidgetitem9->setFlags(Qt::ItemIsSelectable|Qt::ItemIsDragEnabled|Qt::ItemIsUserCheckable);
+        tableWidget->setItem(0, 3, __qtablewidgetitem9);
+        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
+        tableWidget->setItem(1, 0, __qtablewidgetitem10);
+        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
+        tableWidget->setItem(1, 1, __qtablewidgetitem11);
+        QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
+        tableWidget->setItem(1, 2, __qtablewidgetitem12);
+        QTableWidgetItem *__qtablewidgetitem13 = new QTableWidgetItem();
+        tableWidget->setItem(1, 3, __qtablewidgetitem13);
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
+        tableWidget->setGeometry(QRect(40, 60, 461, 192));
         stackedWidget->addWidget(page_3);
 
         verticalLayout->addWidget(stackedWidget);
@@ -387,7 +332,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 593, 21));
+        menuBar->setGeometry(QRect(0, 0, 610, 21));
         menuFichier = new QMenu(menuBar);
         menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
         menuEditer = new QMenu(menuBar);
@@ -417,7 +362,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(2);
         stackedWidget_2->setCurrentIndex(0);
 
 
@@ -485,26 +430,39 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; text-decoration: underline;\">Lite de contacts</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_10->setText(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; font-style:italic; text-decoration: underline;\">Nom</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_11->setText(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; font-style:italic; text-decoration: underline;\">Pr\303\251nom</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_12->setText(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; font-style:italic; text-decoration: underline;\">N\302\260 Tel</span></p></body></html>", 0, QApplication::UnicodeUTF8));
-        label_13->setText(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16pt; font-weight:600; font-style:italic; text-decoration: underline;\">Courriel</span></p></body></html>", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Nom", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem1 = tableWidget->horizontalHeaderItem(1);
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "Prenom", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem2 = tableWidget->horizontalHeaderItem(2);
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "T\303\251l\303\251phone", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(3);
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Email", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem4 = tableWidget->verticalHeaderItem(0);
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "New Row", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem5 = tableWidget->verticalHeaderItem(1);
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "New Row", 0, QApplication::UnicodeUTF8));
+
+        const bool __sortingEnabled = tableWidget->isSortingEnabled();
+        tableWidget->setSortingEnabled(false);
+        QTableWidgetItem *___qtablewidgetitem6 = tableWidget->item(0, 0);
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Belly", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem7 = tableWidget->item(0, 1);
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "htbhb", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem8 = tableWidget->item(0, 2);
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "thth", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem9 = tableWidget->item(0, 3);
+        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "ggtre", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem10 = tableWidget->item(1, 0);
+        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "ethet", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem11 = tableWidget->item(1, 1);
+        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "htgnhtre", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem12 = tableWidget->item(1, 2);
+        ___qtablewidgetitem12->setText(QApplication::translate("MainWindow", "dhtrthrerg", 0, QApplication::UnicodeUTF8));
+        QTableWidgetItem *___qtablewidgetitem13 = tableWidget->item(1, 3);
+        ___qtablewidgetitem13->setText(QApplication::translate("MainWindow", "geregr", 0, QApplication::UnicodeUTF8));
+        tableWidget->setSortingEnabled(__sortingEnabled);
+
         menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", 0, QApplication::UnicodeUTF8));
         menuEditer->setTitle(QApplication::translate("MainWindow", "Editer", 0, QApplication::UnicodeUTF8));
         menuListe_contact->setTitle(QApplication::translate("MainWindow", "Liste contact", 0, QApplication::UnicodeUTF8));
