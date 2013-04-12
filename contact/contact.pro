@@ -13,11 +13,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     licence.cpp \
-    etudiant.cpp
+    etudiant.cpp \
+    enregistrement_dialog_ok.cpp
 
 HEADERS  += mainwindow.h \
     licence.h \
-    etudiant.h
+    etudiant.h \
+    enregistrement_dialog_ok.h
 
 FORMS    += mainwindow.ui \
-    licence.ui
+    licence.ui \
+    enregistrement_dialog_ok.ui

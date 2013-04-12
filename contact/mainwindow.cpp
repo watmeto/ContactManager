@@ -4,6 +4,7 @@
 #include <qinputdialog.h>
 #include <QDebug>
 #include "etudiant.h"
+#include "enregistrement_dialog_ok.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -56,6 +57,11 @@ void MainWindow::on_pushButton_clicked()
     num =  ui->Enum->text();
     Etudiant e(nom, prenom, num, email);
     enregistrer(e);
+    Enregistrement_dialog_ok  box_enregistrer;
+    box_enregistrer.setModal(true);
+    box_enregistrer.exec();
+
+
 }
 
 

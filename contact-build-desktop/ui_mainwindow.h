@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu 11. Apr 23:30:04 2013
+** Created: Fri 12. Apr 00:59:00 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -51,11 +51,11 @@ public:
     QLabel *label;
     QLineEdit *Enom;
     QLabel *label_2;
+    QLineEdit *Eprenom;
     QLabel *label_3;
     QLineEdit *Enum;
     QLabel *label_4;
     QLineEdit *Eemail;
-    QLineEdit *Eprenom;
     QPushButton *pushButton;
     QPushButton *Reset;
     QWidget *page_2;
@@ -69,13 +69,13 @@ public:
     QWidget *layoutWidget_2;
     QFormLayout *formLayout_3;
     QLabel *label_5;
-    QLineEdit *lineEdit_5;
     QLabel *label_6;
     QLineEdit *lineEdit_6;
     QLabel *label_7;
     QLineEdit *lineEdit_7;
     QLabel *label_8;
     QLineEdit *lineEdit_8;
+    QLineEdit *lineEdit_5;
     QPushButton *pushButton_3;
     QPushButton *pushButton_4;
     QWidget *page_3;
@@ -152,11 +152,12 @@ public:
         page->setObjectName(QString::fromUtf8("page"));
         layoutWidget = new QWidget(page);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 50, 481, 112));
+        layoutWidget->setGeometry(QRect(20, 50, 269, 112));
         formLayout_2 = new QFormLayout(layoutWidget);
         formLayout_2->setSpacing(6);
         formLayout_2->setContentsMargins(11, 11, 11, 11);
         formLayout_2->setObjectName(QString::fromUtf8("formLayout_2"));
+        formLayout_2->setFieldGrowthPolicy(QFormLayout::AllNonFixedFieldsGrow);
         formLayout_2->setContentsMargins(0, 0, 0, 0);
         label = new QLabel(layoutWidget);
         label->setObjectName(QString::fromUtf8("label"));
@@ -172,6 +173,11 @@ public:
         label_2->setObjectName(QString::fromUtf8("label_2"));
 
         formLayout_2->setWidget(1, QFormLayout::LabelRole, label_2);
+
+        Eprenom = new QLineEdit(layoutWidget);
+        Eprenom->setObjectName(QString::fromUtf8("Eprenom"));
+
+        formLayout_2->setWidget(1, QFormLayout::FieldRole, Eprenom);
 
         label_3 = new QLabel(layoutWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
@@ -192,11 +198,6 @@ public:
         Eemail->setObjectName(QString::fromUtf8("Eemail"));
 
         formLayout_2->setWidget(3, QFormLayout::FieldRole, Eemail);
-
-        Eprenom = new QLineEdit(layoutWidget);
-        Eprenom->setObjectName(QString::fromUtf8("Eprenom"));
-
-        formLayout_2->setWidget(1, QFormLayout::FieldRole, Eprenom);
 
         pushButton = new QPushButton(page);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
@@ -245,11 +246,6 @@ public:
 
         formLayout_3->setWidget(0, QFormLayout::LabelRole, label_5);
 
-        lineEdit_5 = new QLineEdit(layoutWidget_2);
-        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
-
-        formLayout_3->setWidget(0, QFormLayout::FieldRole, lineEdit_5);
-
         label_6 = new QLabel(layoutWidget_2);
         label_6->setObjectName(QString::fromUtf8("label_6"));
 
@@ -280,6 +276,13 @@ public:
 
         formLayout_3->setWidget(3, QFormLayout::FieldRole, lineEdit_8);
 
+        lineEdit_5 = new QLineEdit(layoutWidget_2);
+        lineEdit_5->setObjectName(QString::fromUtf8("lineEdit_5"));
+        lineEdit_5->setEnabled(false);
+        lineEdit_5->setStyleSheet(QString::fromUtf8("border-color: rgb(213, 213, 213);"));
+
+        formLayout_3->setWidget(0, QFormLayout::FieldRole, lineEdit_5);
+
         pushButton_3 = new QPushButton(page_2);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(180, 210, 75, 31));
@@ -289,6 +292,11 @@ public:
         pushButton_4->setGeometry(QRect(280, 210, 75, 31));
         pushButton_4->setStyleSheet(QString::fromUtf8("color: rgb(255, 0, 0);"));
         stackedWidget->addWidget(page_2);
+        stackedWidget_2->raise();
+        layoutWidget_2->raise();
+        pushButton_3->raise();
+        pushButton_4->raise();
+        lineEdit_5->raise();
         page_3 = new QWidget();
         page_3->setObjectName(QString::fromUtf8("page_3"));
         scrollArea = new QScrollArea(page_3);
@@ -300,7 +308,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 537, 197));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 539, 199));
         line = new QFrame(scrollAreaWidgetContents);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(120, 0, 16, 201));
@@ -379,7 +387,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 593, 20));
+        menuBar->setGeometry(QRect(0, 0, 593, 21));
         menuFichier = new QMenu(menuBar);
         menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
         menuEditer = new QMenu(menuBar);
@@ -409,7 +417,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
         stackedWidget_2->setCurrentIndex(0);
 
 
