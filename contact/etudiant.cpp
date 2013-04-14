@@ -98,8 +98,13 @@ void supprimer(Etudiant e){
                 while (!flux.atEnd())
                 {
                         QString line = flux.readLine();
-                        if (!line.contains(aSupprimer, Qt::CaseInsensitive)){
-                            buffer += ligne+"\n";
+                        Etudiant m(line);
+                        qDebug() << aSupprimer << m.getMat();
+                        //if (!line.contains(aSupprimer, Qt::CaseInsensitive)){
+                        if ( QString::compare(aSupprimer, m.getMat(), Qt::CaseInsensitive)){
+                            buffer += line+"\n";
+                            qDebug()<<"buff " << buffer;
+                            qDebug() <<"line "<< line;
                         }
 
                  }
@@ -108,6 +113,7 @@ void supprimer(Etudiant e){
         if(fichier.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text)){
              QTextStream flux(&fichier);
              flux << buffer;
+             flux.flush();
         }
 
 
@@ -204,7 +210,57 @@ QString Etudiant::getMat()
         return(matricule);
 }
 
-QString Etudiant::getNa()
-{
-        return(email);
+
+
+QString Etudiant::getNom(){
+    return(nom);
+}
+
+QString Etudiant::getPrenom(){
+    return(prenom);
+}
+
+QString Etudiant::getNum(){
+    return(numero);
+}
+
+QString Etudiant::getEmail(){
+    return(email);
+}
+void modifierEtudiant(QString mat,QString n, QString p, QString num, QString mail){
+
+    QString buffer;
+    QString fileName = "eleves.txt";
+    QFile fichier(fileName);
+    Etudiant e(mat,n,p,num,mail);
+    if(fichier.open(QIODevice::ReadOnly | QIODevice::Text)){
+            QTextStream flux(&fichier);
+
+
+            while (!flux.atEnd())
+            {
+                    QString line = flux.readLine();
+                    Etudiant f(line);
+
+                    if (f.getMat() == mat)
+                        buffer += e.who();
+
+                    else
+                        buffer += line+"\n";
+                  /*if (!line.contains(aModifier, Qt::CaseInsensitive)){
+                        buffer += ligne+"\n";
+                    }
+                    else{
+                        Etudiant e()
+
+             }*/
+        }
+    fichier.close();
+    if(fichier.open(QIODevice::ReadWrite | QIODevice::Truncate | QIODevice::Text)){
+         QTextStream flux(&fichier);
+         flux << buffer;
+    }
+
+
+}
 }

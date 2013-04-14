@@ -17,7 +17,10 @@ public:
         QString who();
         void affiche();
         QString getMat();
-        QString getNa();
+        QString getNom();
+        QString getPrenom();
+        QString getNum();
+        QString getEmail();
 };
 int nbEtudiant();
 void enregistrer(Etudiant e);
@@ -25,4 +28,5 @@ void ajouter();
 void listeEtudiants();
 void supprimer(Etudiant e);
 Etudiant chercher(QString identifiant);
+void modifierEtudiant(QString matricule,QString nom, QString prenom, QString numero, QString email);
 #endif // ETUDIANT_H

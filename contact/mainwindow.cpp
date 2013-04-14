@@ -5,6 +5,7 @@
 #include <QDebug>
 #include "etudiant.h"
 #include "enregistrement_dialog_ok.h"
+#include <QFile>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -33,8 +34,10 @@ void MainWindow::on_actionLicence_triggered()
 
 void MainWindow::on_actionRechercher_triggered()
 {
-    QString matricule= QInputDialog::getText(this, "Matricule", "Saisissez le matricule à rechercher");
-       qDebug() << matricule;
+    bool ok = false;
+    QString matricule= QInputDialog::getText(this, "Matricule", "Saisissez le matricule à rechercher", QLineEdit::Normal, QString(), &ok);
+
+
 
    /* if(this->event(QEvent *matricule))
         {
@@ -42,9 +45,37 @@ void MainWindow::on_actionRechercher_triggered()
         }
    */
 
-    if(matricule.end())
+    if(ok && !matricule.isEmpty())
     {
-        ui->stackedWidget->setCurrentIndex(1);
+
+        QString fileName = "eleves.txt";
+        QFile fichier(fileName);
+        QString ligne; int i = 0;
+        if(fichier.open(QIODevice::ReadOnly | QIODevice::Text)){
+                QTextStream flux(&fichier);
+
+
+                while (!flux.atEnd())
+                {
+                      ligne = flux.readLine();
+                      if (ligne.contains(matricule, Qt::CaseInsensitive)){
+                          Etudiant e(ligne);
+                          ui->tableWidget_2->setRowCount(nbEtudiant()-1 );
+                          ui->tableWidget_2->setItem(i,0, new QTableWidgetItem(e.getMat()));
+                          ui->tableWidget_2->setItem(i,1, new QTableWidgetItem(e.getNom()));
+                          ui->tableWidget_2->setItem(i,2, new QTableWidgetItem(e.getPrenom()));
+                          ui->tableWidget_2->setItem(i,3, new QTableWidgetItem(e.getNum()));
+                          ui->tableWidget_2->setItem(i,4, new QTableWidgetItem(e.getEmail()));
+                          i++;
+                      }
+
+                }
+
+        }
+
+
+
+        ui->stackedWidget->setCurrentIndex(3);
     }
 
 }
@@ -57,6 +88,30 @@ void MainWindow::on_actionAjouter_activated()
 
 void MainWindow::on_actionListe_activated()
 {
+
+    QString fileName = "eleves.txt";
+    QFile fichier(fileName);
+    QString ligne; int i = 0;
+    if(fichier.open(QIODevice::ReadOnly | QIODevice::Text)){
+            QTextStream flux(&fichier);
+
+
+            while (!flux.atEnd())
+            {
+                  ligne = flux.readLine();
+                  Etudiant e(ligne);
+                  ui->tableWidget->setRowCount(nbEtudiant()-1 );
+                  ui->tableWidget->setItem(i,0, new QTableWidgetItem(e.getNom()));
+                  ui->tableWidget->setItem(i,1, new QTableWidgetItem(e.getPrenom()));
+                  ui->tableWidget->setItem(i,2, new QTableWidgetItem(e.getNum()));
+                  ui->tableWidget->setItem(i,3, new QTableWidgetItem(e.getEmail()));
+                  i++;
+
+            }
+
+    }
+
+
     ui->stackedWidget->setCurrentIndex(2);
 }
 
@@ -85,4 +140,39 @@ void MainWindow::on_Reset_clicked()
     ui->Eprenom->setText("");
     ui->Eemail->setText("");
     ui->Enum->setText("");
+}
+
+
+void MainWindow::on_Editer_clicked()
+{
+    QString mat, nom, prenom, num, email;
+    mat = ui->tableWidget_2->currentIndex().row();
+    mat = ui->tableWidget_2->item(mat.toInt(),0)->text();
+
+    Etudiant e = chercher(mat);
+    nom = e.getNom();
+    prenom = e.getPrenom();
+    num = e.getNum();
+    email = e.getEmail();
+    e.affiche();
+
+    ui->Mmat->setText(mat); ui->Mnom->setText(nom); ui->Mprenom->setText(prenom);
+    ui->Mnum->setText(nom); ui->Memail->setText(email);
+    ui->stackedWidget->setCurrentIndex(1);
+
+}
+
+void MainWindow::on_supprimer_clicked()
+{
+
+    Etudiant e (ui->Mmat->text(), ui->Mnom->text(), ui->Mprenom->text(),
+    ui->Mnum->text(), ui->Memail->text());
+    supprimer(e);
+}
+
+void MainWindow::on_modifier_clicked()
+{
+    modifierEtudiant (ui->Mmat->text(), ui->Mnom->text(), ui->Mprenom->text(),
+    ui->Mnum->text(), ui->Memail->text());
+
 }

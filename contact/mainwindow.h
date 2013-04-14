@@ -32,6 +32,12 @@ private slots:
 
     void on_Reset_clicked();
 
+    void on_Editer_clicked();
+
+    void on_supprimer_clicked();
+
+    void on_modifier_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

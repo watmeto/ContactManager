@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
         enregistrer(e);
         ajouter();
         nbEtudiant(); */
+    //modifierEtudiant("1","Belly","yamakazi","111fzef11","ozeefzcvzvzfvrrpefez@fz.fer");
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
