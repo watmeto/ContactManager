@@ -28,8 +28,6 @@ private slots:
 
     void on_pushButton_clicked();
 
-    //void on_Enregistrer_clicked();
-
     void on_Reset_clicked();
 
     void on_Editer_clicked();
@@ -37,8 +35,6 @@ private slots:
     void on_supprimer_clicked();
 
     void on_modifier_clicked();
-
-    void on_actionAide_triggered();
 
 private:
     Ui::MainWindow *ui;

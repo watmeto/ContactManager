@@ -17,19 +17,6 @@
    <iconset>
     <normaloff>../img/help_globe_93.jpg</normaloff>../img/help_globe_93.jpg</iconset>
   </property>
-  <widget class="QCommandLinkButton" name="commandLinkButton">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>20</y>
-     <width>172</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>CommandLinkButton</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>
