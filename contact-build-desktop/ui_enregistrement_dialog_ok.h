@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'enregistrement_dialog_ok.ui'
 **
-** Created: Sun 14. Apr 20:07:23 2013
+** Created: Sun 14. Apr 23:27:02 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
