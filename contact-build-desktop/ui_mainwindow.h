@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun 14. Apr 20:51:08 2013
+** Created: Sun 14. Apr 20:55:43 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -44,6 +44,7 @@ public:
     QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
     QStackedWidget *stackedWidget;
+    QWidget *page_8;
     QWidget *page;
     QWidget *layoutWidget;
     QFormLayout *formLayout_2;
@@ -139,6 +140,9 @@ public:
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         stackedWidget = new QStackedWidget(centralWidget);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
+        page_8 = new QWidget();
+        page_8->setObjectName(QString::fromUtf8("page_8"));
+        stackedWidget->addWidget(page_8);
         page = new QWidget();
         page->setObjectName(QString::fromUtf8("page"));
         layoutWidget = new QWidget(page);
@@ -387,7 +391,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(0);
         stackedWidget_2->setCurrentIndex(0);
 
 
