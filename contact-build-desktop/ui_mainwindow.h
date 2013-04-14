@@ -1,7 +1,11 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
+<<<<<<< HEAD
 ** Created: Sun 14. Apr 19:33:16 2013
+=======
+** Created: Sun 14. Apr 19:37:48 2013
+>>>>>>> origin/master
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -384,7 +388,6 @@ public:
         menuEditer->addAction(actionRechercher);
         menuListe_contact->addAction(actionListe);
         menuA_propos->addAction(actionLicence);
-        menuA_propos->addAction(actionAide);
 
         retranslateUi(MainWindow);
 

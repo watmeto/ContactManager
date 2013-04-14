@@ -6,7 +6,6 @@
 #include "etudiant.h"
 #include "enregistrement_dialog_ok.h"
 #include <QFile>
-#include "help.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -178,9 +177,3 @@ void MainWindow::on_modifier_clicked()
 
 }
 
-void MainWindow::on_actionAide_triggered()
-{
-    help mhelp;
-    mhelp.setModal(true);
-    mhelp.exec();
-}

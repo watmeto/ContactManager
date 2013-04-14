@@ -465,7 +465,6 @@ p, li { white-space: pre-wrap; }
      <string>A propos</string>
     </property>
     <addaction name="actionLicence"/>
-    <addaction name="actionAide"/>
    </widget>
    <addaction name="menuFichier"/>
    <addaction name="menuEditer"/>
