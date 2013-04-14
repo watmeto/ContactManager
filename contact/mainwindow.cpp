@@ -77,7 +77,7 @@ void MainWindow::on_actionRechercher_triggered()
 
 
 
-        ui->stackedWidget->setCurrentIndex(3);
+        ui->stackedWidget->setCurrentIndex(4);
     }
 
 }
@@ -85,7 +85,7 @@ void MainWindow::on_actionRechercher_triggered()
 
 void MainWindow::on_actionAjouter_activated()
 {
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 void MainWindow::on_actionListe_activated()
@@ -114,7 +114,7 @@ void MainWindow::on_actionListe_activated()
     }
 
 
-    ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget->setCurrentIndex(3);
 }
 
 
@@ -161,7 +161,7 @@ void MainWindow::on_Editer_clicked()
 
     ui->Mmat->setText(mat); ui->Mnom->setText(nom); ui->Mprenom->setText(prenom);
     ui->Mnum->setText(num); ui->Memail->setText(email);
-    ui->stackedWidget->setCurrentIndex(1);
+    ui->stackedWidget->setCurrentIndex(2);
 
 }
 
