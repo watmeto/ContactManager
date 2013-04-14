@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'licence.ui'
 **
-** Created: Sun 14. Apr 16:32:21 2013
+** Created: Sun 14. Apr 19:23:41 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -32,6 +32,9 @@ public:
         if (licence->objectName().isEmpty())
             licence->setObjectName(QString::fromUtf8("licence"));
         licence->resize(361, 202);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../img/icon-39737_640.png"), QSize(), QIcon::Normal, QIcon::Off);
+        licence->setWindowIcon(icon);
         textBrowser = new QTextBrowser(licence);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(0, 0, 361, 201));

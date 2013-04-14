@@ -14,13 +14,16 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     licence.cpp \
     etudiant.cpp \
-    enregistrement_dialog_ok.cpp
+    enregistrement_dialog_ok.cpp \
+    help.cpp
 
 HEADERS  += mainwindow.h \
     licence.h \
     etudiant.h \
-    enregistrement_dialog_ok.h
+    enregistrement_dialog_ok.h \
+    help.h
 
 FORMS    += mainwindow.ui \
     licence.ui \
-    enregistrement_dialog_ok.ui
+    enregistrement_dialog_ok.ui \
+    help.ui

@@ -16,6 +16,10 @@
   <property name="windowTitle">
    <string>Enrégistrement</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/isvalide.png</normaloff>../img/isvalide.png</iconset>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>

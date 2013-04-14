@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'enregistrement_dialog_ok.ui'
 **
-** Created: Sun 14. Apr 16:32:21 2013
+** Created: Sun 14. Apr 19:23:41 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -33,6 +33,9 @@ public:
             Enregistrement_dialog_ok->setObjectName(QString::fromUtf8("Enregistrement_dialog_ok"));
         Enregistrement_dialog_ok->resize(348, 109);
         Enregistrement_dialog_ok->setCursor(QCursor(Qt::PointingHandCursor));
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../img/isvalide.png"), QSize(), QIcon::Normal, QIcon::Off);
+        Enregistrement_dialog_ok->setWindowIcon(icon);
         label = new QLabel(Enregistrement_dialog_ok);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 20, 331, 61));

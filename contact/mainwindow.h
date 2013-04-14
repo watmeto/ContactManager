@@ -38,6 +38,8 @@ private slots:
 
     void on_modifier_clicked();
 
+    void on_actionAide_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

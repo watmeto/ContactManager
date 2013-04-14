@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\licence.o
+./debug\etudiant.o
+./debug\enregistrement_dialog_ok.o
+./debug\help.o
+./debug\moc_mainwindow.o
+./debug\moc_licence.o
+./debug\moc_enregistrement_dialog_ok.o
+./debug\moc_help.o
+);
