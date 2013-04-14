@@ -51,6 +51,7 @@ void MainWindow::on_actionRechercher_triggered()
         QString fileName = "eleves.txt";
         QFile fichier(fileName);
         QString ligne; int i = 0;
+        ui->tableWidget_2->clearContents();
         if(fichier.open(QIODevice::ReadOnly | QIODevice::Text)){
                 QTextStream flux(&fichier);
 
@@ -146,7 +147,8 @@ void MainWindow::on_Reset_clicked()
 void MainWindow::on_Editer_clicked()
 {
     QString mat, nom, prenom, num, email;
-    mat = ui->tableWidget_2->currentIndex().row();
+    mat = QString::number(ui->tableWidget_2->currentRow());
+    //qDebug() << "lign " << mat;
     mat = ui->tableWidget_2->item(mat.toInt(),0)->text();
 
     Etudiant e = chercher(mat);
@@ -157,7 +159,7 @@ void MainWindow::on_Editer_clicked()
     e.affiche();
 
     ui->Mmat->setText(mat); ui->Mnom->setText(nom); ui->Mprenom->setText(prenom);
-    ui->Mnum->setText(nom); ui->Memail->setText(email);
+    ui->Mnum->setText(num); ui->Memail->setText(email);
     ui->stackedWidget->setCurrentIndex(1);
 
 }

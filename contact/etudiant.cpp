@@ -24,7 +24,7 @@ int nbEtudiant(){
                 }
 
         }
-        qDebug() << nb;
+      //  qDebug() << nb;
         return(nb+1);
 
 }
@@ -33,7 +33,7 @@ void enregistrer(Etudiant e){
     QFile fichier(fileName);
     fichier.open(QIODevice::WriteOnly | QIODevice::Append| QIODevice::Text);
     QTextStream flux(&fichier);
-    qDebug() << e.who();
+   // qDebug() << e.who();
    // qDebug() << "lol";
     flux << e.who();
     fichier.flush();
@@ -77,7 +77,7 @@ Etudiant chercher(QString identifiant){
                  }
             }
           else
-              qDebug()<<"Nothing Found"<<endl;
+             // qDebug()<<"Nothing Found"<<endl;
               return(Etudiant());
 
 
@@ -99,12 +99,12 @@ void supprimer(Etudiant e){
                 {
                         QString line = flux.readLine();
                         Etudiant m(line);
-                        qDebug() << aSupprimer << m.getMat();
+                       // qDebug() << aSupprimer << m.getMat();
                         //if (!line.contains(aSupprimer, Qt::CaseInsensitive)){
                         if ( QString::compare(aSupprimer, m.getMat(), Qt::CaseInsensitive)){
                             buffer += line+"\n";
-                            qDebug()<<"buff " << buffer;
-                            qDebug() <<"line "<< line;
+                          //  qDebug()<<"buff " << buffer;
+                            //qDebug() <<"line "<< line;
                         }
 
                  }
@@ -136,9 +136,9 @@ void listeEtudiants(){
                 }
        }
         for(it = E.begin(); it != E.end(); it++){
-                qDebug()<<"-------------------------------"<<endl;
+//                qDebug()<<"-------------------------------"<<endl;
                 it->affiche();
-                qDebug()<<"-------------------------------"<<endl;
+                //qDebug()<<"-------------------------------"<<endl;
         }
         fichier.close();
 
@@ -203,7 +203,7 @@ QString Etudiant::who(void)
 
 void Etudiant::affiche(void)
 {
-        qDebug() << "Matricule: "+matricule + "\n Nom: "+ nom + " Prenom: "+ prenom+ "\n Numero: "+ numero + "\n email: "+ email <<endl;
+        //qDebug() << "Matricule: "+matricule + "\n Nom: "+ nom + " Prenom: "+ prenom+ "\n Numero: "+ numero + "\n email: "+ email <<endl;
 }
 QString Etudiant::getMat()
 {
