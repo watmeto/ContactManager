@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Contact Manager</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/472.jpg</normaloff>../img/472.jpg</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
@@ -139,24 +143,7 @@ color: rgb(0, 170, 0);</string>
         <property name="currentIndex">
          <number>0</number>
         </property>
-        <widget class="QWidget" name="page_4">
-         <widget class="QPushButton" name="pushButton_5">
-          <property name="geometry">
-           <rect>
-            <x>30</x>
-            <y>100</y>
-            <width>75</width>
-            <height>31</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">color: rgb(0, 0, 0);</string>
-          </property>
-          <property name="text">
-           <string>Annuler</string>
-          </property>
-         </widget>
-        </widget>
+        <widget class="QWidget" name="page_4"/>
         <widget class="QWidget" name="page_5">
          <widget class="QPlainTextEdit" name="plainTextEdit_3">
           <property name="geometry">
@@ -318,7 +305,7 @@ background-color: rgb(219, 255, 255);</string>
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline;&quot;&gt;Lite de contacts&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; text-decoration: underline;&quot;&gt;Liste de contacts&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
        <widget class="QTableWidget" name="tableWidget">
@@ -451,7 +438,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>610</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFichier">
@@ -560,7 +547,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>Eemail</tabstop>
   <tabstop>pushButton</tabstop>
   <tabstop>Reset</tabstop>
-  <tabstop>pushButton_5</tabstop>
   <tabstop>plainTextEdit_3</tabstop>
   <tabstop>plainTextEdit_4</tabstop>
   <tabstop>Mnom</tabstop>
