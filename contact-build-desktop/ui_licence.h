@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'licence.ui'
 **
-** Created: Sun 14. Apr 23:27:02 2013
+** Created: Sun 14. Apr 23:57:50 2013
 **      by: Qt User Interface Compiler version 4.7.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -63,12 +63,12 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">R\303\251alisation : </span><span style=\" font-size:12pt; font-weight:600; color:#3c7ed4;\">Kientega Landry</span><span style=\" font-size:10pt;\"> &amp;</span><span style=\" font-size:10pt; color:#3b80bd;\"> </span><span style=\" font-size:12pt; font-weight:600; color:#3b80bd;\">Belly Ndiaye</span><span style=\" font-size:10pt;\">.</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Suivre l'Avancement sur</span><span style=\" font-size:10pt;\"> </span><a href=\"https://twitter.com/landry_just\"><span style=\" font-size:12pt; text-decoration: underline; color:#0042c7;\">@landry_just  </span></a><a href=\"https://twitter.com"
                         "/landry_just\"><span style=\" font-size:10pt; text-decoration: underline; color:#000000;\"> &amp;</span></a><a href=\"https://twitter.com/landry_just\"><span style=\" font-size:12pt; text-decoration: underline; color:#0042c7;\"> </span></a><a href=\"https://twitter.com/landry_just\"><span style=\" font-size:12pt; text-decoration: underline; color:#b3b3b3;\"> </span></a><a href=\"https://twitter.com/watmeto\"><span style=\" font-size:12pt; text-decoration: underline; color:#0093dc;\">@watmeto</span></a></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Suivre \303\251galement nos projets sur</span><span style=\" font-size:14pt; color:#0055ff;\"> </span><a href=\"https://github.com/Aubinator\"><span style=\" font-size:8pt; text-decoration: underline; color:#0000ff;\">Aubinator</span></a><a href=\"github.com/Aubinator\"><span style=\" font-size:12pt; text-decoration: underline; color:#0055ff;\"> </span><"
-                        "/a><a href=\"github.com/Aubinator\"><span style=\" font-size:10pt; text-decoration: underline; color:#000000;\"> &amp;</span></a><a href=\"github.com/Aubinator\"><span style=\" font-size:12pt; text-decoration: underline; color:#0055ff;\"> </span></a><a href=\"github.com/Aubinator\"><span style=\" font-size:14pt; text-decoration: underline; color:#00aaff;\"> </span></a><a href=\"https://github.com/watmeto\"><span style=\" font-size:12pt; text-decoration: underline; color:#00aaff;\">Watmeto</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:8pt;\">Suivre \303\251galement nos projets sur</span><span style=\" font-size:12pt; color:#0055ff;\"> </span><a href=\"https://github.com/Aubinator\"><span style=\" font-size:12pt; text-decoration: underline; color:#0055ff;\">Aubinator</span></a><a href=\"github.com/Aubinator\"><span style=\" font-size:12pt; text-decoration: underline; color:#0055ff;\"> </span>"
+                        "</a><a href=\"github.com/Aubinator\"><span style=\" font-size:10pt; text-decoration: underline; color:#000000;\"> &amp;</span></a><a href=\"github.com/Aubinator\"><span style=\" font-size:12pt; text-decoration: underline; color:#0055ff;\"> </span></a><a href=\"github.com/Aubinator\"><span style=\" font-size:14pt; text-decoration: underline; color:#00aaff;\"> </span></a><a href=\"https://github.com/watmeto\"><span style=\" font-size:12pt; text-decoration: underline; color:#00aaff;\">Watmeto</span></a></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">Version V1.0.1</span></p>\n"
 "<p align=\"center\" style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><sp"
-                        "an style=\" font-size:10pt;\">\302\251 Tout droits r\303\251serv\303\251s </span></p>\n"
+"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><s"
+                        "pan style=\" font-size:10pt;\">\302\251 Tout droits r\303\251serv\303\251s </span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;\"></p></body></html>", 0, QApplication::UnicodeUTF8));
         pushButton->setText(QApplication::translate("licence", "Fermer", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
