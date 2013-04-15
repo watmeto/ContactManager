@@ -6,7 +6,7 @@
 #include "etudiant.h"
 #include "enregistrement_dialog_ok.h"
 #include <QFile>
-
+#include <QMessageBox>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -171,12 +171,14 @@ void MainWindow::on_supprimer_clicked()
     Etudiant e (ui->Mmat->text(), ui->Mnom->text(), ui->Mprenom->text(),
     ui->Mnum->text(), ui->Memail->text());
     supprimer(e);
+    QMessageBox::information(this, "Resultat", "Suppression reussie");
 }
 
 void MainWindow::on_modifier_clicked()
 {
     modifierEtudiant (ui->Mmat->text(), ui->Mnom->text(), ui->Mprenom->text(),
     ui->Mnum->text(), ui->Memail->text());
+    QMessageBox::information(this, "Resultat", "Modification reussie");
 
 }
 
